@@ -1,0 +1,23 @@
+
+.main-bar, .main-bar div ul {
+  background-color: black;
+  color: white;
+}
+
+.btn-search {
+  background-color: white;
+  color: black;
+}
+
+.menu-navegacao {
+  padding: 0;
+}
+
+.menu-navegacao li a:hover {
+  background-color: gray;
+  color: white;
+}
+
+.menu-navegacao ul li a {
+  color: black;
+}
