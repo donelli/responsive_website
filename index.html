@@ -6,15 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   
-  <!-- Compressed CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
 
-  <!-- Compressed JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
   
   <link rel="stylesheet" href="./css/styles.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  <script>
+    // Initializes the foundation JS API
+    $(document).ready(() => $(document).foundation() );
+  </script> -->
+  
+  <link rel="stylesheet" href="./foundation/css/foundation.css">
+  <link rel="stylesheet" href="./foundation/css/app.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  
+  <script src="./foundation/js/vendor/jquery.js"></script>
+  <script src="./foundation/js/vendor/what-input.js"></script>
+  <script src="./foundation/js/vendor/foundation.js"></script>
+  <script src="./foundation/js/app.js"></script>
   
   <script>
     // Initializes the foundation JS API
@@ -38,13 +53,14 @@
     </div>
   </div>
   
-  <div class="title-bar align-right" data-responsive-toggle="responsive-menu-nav" data-hide-for="medium">
+  <div class="title-bar align-right" data-responsive-toggle="responsive-menu-nav" data-hide-for="medium" style="background-color: rgb(39, 39, 39);">
     <div class="title-bar-title">Menu</div>
     <button class="menu-icon" type="button" data-toggle></button>
   </div>
   
-  <div class="top-bar align-center menu-navegacao" id="responsive-menu-nav">
-    <ul class="dropdown medium-horizontal menu" data-responsive-menu="accordion">
+  <div class="top-bar align-center navigation-menu" id="responsive-menu-nav">
+    
+    <ul class="medium-horizontal menu hide-for-small-only">
         <li><a href="#">Home</a></li>
         <li><a href="#">Resources</a></li>
         <li><a href="#">FREE EBooks</a></li>
@@ -52,14 +68,222 @@
         <li><a href="#">Courses</a></li>
         <li><a href="#">Automation</a></li>
         <li><a href="#">Types Of Testing</a></li>
+        <li><a href="#">Tutorials</a></li>
     </ul>
+    
+    <div class="show-for-small-only small-menu-navigation">
+      
+      <div class="align-left">
+        <a href="#">Home</a>
+      </div>
+      
+      <div class="align-left">
+        <a href="#">Resources</a>
+      </div>
+      
+      <div class="align-left">
+        <a href="#">FREE EBooks</a>
+      </div>
+      
+      <div class="align-left">
+        
+        <a data-toggle="qa_testing_submenu toggler_qa_testing caret_qa_testing" id="toggler_qa_testing" data-toggler=".submenu-active">
+          QA Testing
+          <div class="float-right">
+            <i class="fas fa-caret-down" id="caret_qa_testing" data-toggler="fa-caret-down fa-caret-up"></i>
+          </div>
+        </a>
+        
+        <div id="qa_testing_submenu" data-toggler=".hide" class="hide small-menu-navigation-submenu">
+          
+          <div class="grid-x">
+            <a href="https://www.softwaretestinghelp.com/free-online-software-testing-qa-training-course/" class="cell small-6">Free QA Training</a>
+            <a href="https://www.softwaretestinghelp.com/manual-testing-tutorial-1/" class="cell small-6">Software Testing</a>
+            <a href="https://www.softwaretestinghelp.com/how-to-write-effective-test-cases-test-cases-procedures-and-definitions/" class="cell small-6">Test Cases</a>
+            <a href="https://www.softwaretestinghelp.com/bugzilla-new-version-bugzilla-30-released/" class="cell small-6">BugZilla</a>
+            <a href="https://www.softwaretestinghelp.com/testlink-tutorial-1/" class="cell small-6">TestLink</a>
+            <a href="https://www.softwaretestinghelp.com/beginners-guide-to-mobile-application-testing/" class="cell small-6">Mobile Testing</a>
+            <a href="https://www.softwaretestinghelp.com/agile-scrum-methodology-for-development-and-testing/" class="cell small-6">Agile Methodology</a>
+            <a href="https://www.softwaretestinghelp.com/software-quality-assurance/" class="cell small-6">Quality Assurance</a>
+            <a href="https://www.softwaretestinghelp.com/database-testing-process/" class="cell small-6">Database Testing</a>
+            <a href="https://www.softwaretestinghelp.com/15-best-test-management-tools-for-software-testers/" class="cell small-6">Test Management</a>
+            <a href="https://www.softwaretestinghelp.com/etl-testing-data-warehouse-testing/" class="cell small-6">ETL Testing</a>
+            <a href="https://www.softwaretestinghelp.com/guide-erp-testing-sap-testing-1/" class="cell small-6">SAP ERP Testing</a>
+            <a href="https://www.softwaretestinghelp.com/software-development-life-cycle-sdlc/" class="cell small-6">SDLC</a>
+          </div>
+          
+        </div>
+      
+      </div>
+      
+      <div class="align-left">
+        
+        <a data-toggle="courses_submenu toggler_courses caret_courses" id="toggler_courses" data-toggler=".submenu-active">
+          Courses
+          <div class="float-right">
+            <i class="fas fa-caret-down" id="caret_courses" data-toggler="fa-caret-down fa-caret-up"></i>
+          </div>
+        </a>
+        
+        <div id="courses_submenu" data-toggler=".hide" class="hide small-menu-navigation-submenu">
+          
+          <div class="grid-x">
+            <div class="cell small-6">
+              
+              <div class="grid-y">
+                <a href="http://www.softwaretestinghelp.org/best-software-testing-online-training-course/" class="cell small-12"><i class="fas fa-user-tie"></i>Software Testing (LIVE Course)</a>
+                <a href="http://www.softwaretestinghelp.org/selenium-training-online-course/" class="cell small-12"><i class="fas fa-user-tie"></i>Selenium (LIVE Course)</a>
+              </div>
+              
+            </div>
+            <div class="cell small-6">
+              
+              <div class="grid-y">
+                <a href="http://www.softwaretestinghelp.org/software-testing-qa-videos/" class="cell small-12"><i class="fab fa-youtube"></i>Software Testing</a>
+                <a href="http://www.softwaretestinghelp.org/selenium-training-videos/" class="cell small-12"><i class="fab fa-youtube"></i>Selenium</a>
+                <a href="http://www.softwaretestinghelp.org/qtp-training-videos/" class="cell small-12"><i class="fab fa-youtube"></i>QTP/UFT</a>
+                <a href="http://www.softwaretestinghelp.org/jira-video-course/" class="cell small-12"><i class="fab fa-youtube"></i>JIRA</a>
+                <a href="http://www.softwaretestinghelp.org/ruby-cucumber-online-video-course/" class="cell small-12"><i class="fab fa-youtube"></i>Ruby Cucumber</a>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      
+      </div>
+      
+      <div class="align-left">
+        
+        <a data-toggle="automation_submenu toggler_automation caret_automation" id="toggler_automation" data-toggler=".submenu-active">
+          Automation
+          <div class="float-right">
+            <i class="fas fa-caret-down" id="caret_automation" data-toggler="fa-caret-down fa-caret-up"></i>
+          </div>
+        </a>
+        
+        <div id="automation_submenu" data-toggler=".hide" class="hide small-menu-navigation-submenu">
+          
+          <div class="grid-x">
+            <a href="https://www.softwaretestinghelp.com/automation-testing-tutorial-1/" class="cell small-6">Automation Testing</a>
+            <a href="https://www.softwaretestinghelp.com/selenium-tutorial-1/" class="cell small-6">Selenium</a>
+            <a href="https://www.softwaretestinghelp.com/web-services-api-testing-tool-soapui-tutorial-1/" class="cell small-6">SoapUI</a>
+            <a href="https://www.softwaretestinghelp.com/qtp-quicktest-professional-tutorial-1/" class="cell small-6">QTP/UFT</a>
+            <a href="https://www.softwaretestinghelp.com/atlassian-jira-tutorial-1/" class="cell small-6">JIRA</a>
+            <a href="https://www.softwaretestinghelp.com/learn-hp-quality-center-qc-in-4-days/" class="cell small-6">ALM QC</a>
+            <a href="https://www.softwaretestinghelp.com/jmeter-tutorials/" class="cell small-6">JMeter</a>
+            <div class="cell small-6"></div>
+            <a href="https://www.softwaretestinghelp.com/hp-loadrunner-load-testing-tool-training-tutorials/" class="cell small-6">LoadRunner</a>
+          </div>
+          
+        </div>
+      
+      </div>
+
+      <div class="align-left">
+        
+        <a data-toggle="types_of_testing_submenu toggler_types_of_testing caret_types_of_testing" id="toggler_types_of_testing" data-toggler=".submenu-active">
+          Types Of Testing
+          <div class="float-right">
+            <i class="fas fa-caret-down" id="caret_types_of_testing" data-toggler="fa-caret-down fa-caret-up"></i>
+          </div>
+        </a>
+        
+        <div id="types_of_testing_submenu" data-toggler=".hide" class="hide small-menu-navigation-submenu">
+          
+          <div class="grid-x">
+            <a href="https://www.softwaretestinghelp.com/types-of-software-testing/" class="cell small-6">All Testing Types</a>
+            <a href="https://www.softwaretestinghelp.com/guide-to-functional-testing/" class="cell small-6">Functional Testing</a>
+            <a href="https://www.softwaretestinghelp.com/regression-testing-tools-and-methods/" class="cell small-6">Regression Testing</a>
+            <a href="https://www.softwaretestinghelp.com/what-is-integration-testing/" class="cell small-6">Integration Testing</a>
+            <a href="https://www.softwaretestinghelp.com/unit-testing/" class="cell small-6">Unit Testing</a>
+            <a href="https://www.softwaretestinghelp.com/system-testing/" class="cell small-6">System Testing</a>
+            <a href="https://www.softwaretestinghelp.com/smoke-testing-and-sanity-testing-difference/" class="cell small-6">Smoke Testing</a>
+            <a href="https://www.softwaretestinghelp.com/usability-testing-guide/" class="cell small-6">Usability Testing</a>
+            <a href="https://www.softwaretestinghelp.com/what-is-user-acceptance-testing-uat/" class="cell small-6">UAT Testing</a>
+            <a href="https://www.softwaretestinghelp.com/load-testing/" class="cell small-6">Load Testing</a>
+            <a href="https://www.softwaretestinghelp.com/beta-testing/" class="cell small-6">Beta Testing</a>
+            <a href="https://www.softwaretestinghelp.com/stress-testing/" class="cell small-6">Stress Testing</a>
+            <a href="https://www.softwaretestinghelp.com/black-box-testing/" class="cell small-6">Black Box Testing</a>
+            <a href="https://www.softwaretestinghelp.com/how-to-test-application-security-web-and-desktop-application-security-testing-techniques/" class="cell small-6">Security Testing</a>
+            <a href="https://www.softwaretestinghelp.com/white-box-testing-techniques-with-example/" class="cell small-6">White Box testing</a>
+            <a href="https://www.softwaretestinghelp.com/introduction-to-performance-testing-loadrunner-training-tutorial-part-1/" class="cell small-6">Performance Testing</a>
+          </div>
+          
+        </div>
+      
+      </div>
+
+      <div class="align-left">
+        <a href="#">Tutorials</a>
+      </div>
+      
+    </div>
+    
   </div>
   
-  <div class="callout">
+  
+  <div class="grid-container" style="padding-top: 2rem;">
+    <div class="grid-x grid-margin-x">
+      <div class="cell small-12 medium-8">cell</div>
+      <div class="cell small-12 medium-4 right-panel">
+        
+        <div class="margin-bottom-1"><b>About SoftwareTestingHelp</b></div>
+        
+        <div class="callout primary" style="font-size: 11pt;">
+          <p><b>Helping our community since 2006!</b> Most popular portal for Software professionals with <b>100 million+ visits and 300,000+ followers!</b> You will absolutely love our tutorials on QA Testing, Development, Software Tools and Services Reviews and more!</p>
+        </div>
+        
+        <hr>
+        
+        <img src="https://s0.2mdn.net/10311678/Display_Anhanguera_300x600_Homens_DBM.png" alt="anuncio">
+        
+        <hr>
+        
+        <div class="margin-bottom-1"><b>Recommended Reading</b></div>
+        
+        <div style="margin-bottom: 5px;">
+          <a href="https://www.softwaretestinghelp.com/what-is-alpha-testing-beta-testing/">Alpha Testing and Beta Testing (A Complete Guide)</a>          
+        </div>
+        
+        <div style="margin-bottom: 5px;">
+          <a href="https://www.softwaretestinghelp.com/bvt-build-verification-testing-process/">Build Verification Testing (BVT Testing) Complete Guide</a>          
+        </div>
+        
+        <div style="margin-bottom: 5px;">
+          <a href="https://www.softwaretestinghelp.com/functional-testing-vs-non-functional-testing/">Functional Testing Vs Non-Functional Testing</a>          
+        </div>
+        
+        <div style="margin-bottom: 5px;">
+          <a href="https://www.softwaretestinghelp.com/types-of-software-testing/">Types of Software Testing: Different Testing Types with Details</a>          
+        </div>
+        
+        <div style="margin-bottom: 5px;">
+          <a href="https://www.softwaretestinghelp.com/tools/">Best Software Testing Tools 2020 [QA Test Automation Tools]</a>          
+        </div>
+        
+        <div style="margin-bottom: 5px;">
+          <a href="https://www.softwaretestinghelp.com/etl-testing-data-warehouse-testing/">ETL Testing Data Warehouse Testing Tutorial (A Complete Guide)</a>          
+        </div>
+        
+        <div style="margin-bottom: 5px;">
+          <a href="https://www.softwaretestinghelp.com/best-qa-software-testing-service-provider-company/">Best QA Software Testing Services from SoftwareTestingHelp</a>          
+        </div>
+        
+        <hr>
+        
+        <img src="https://s0.2mdn.net/10311678/Display_Anhanguera_300x250_Mulheres_DBM.png" alt="anuncio">
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- <div class="callout">
     <a href="https://www.softwaretestinghelp.com/responsive-web-design-testing-guide/" target="_blank" class="button primary margin-3">Abrir site original</a>
     <br>
     <a href="https://get.foundation/sites/docs/" target="_blank" class="button primary margin-3">Documentação do Foundation css</a>
-  </div>
+  </div> -->
   
 </body>
 </html>

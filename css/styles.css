@@ -1,4 +1,13 @@
 
+a {
+  color: #a90000;
+}
+
+a:hover {
+  color: #a90000;
+  font-weight: bold;
+}
+
 .main-bar, .main-bar div ul {
   background-color: black;
   color: white;
@@ -9,15 +18,62 @@
   color: black;
 }
 
-.menu-navegacao {
+.navigation-menu {
   padding: 0;
 }
 
-.menu-navegacao li a:hover {
+.navigation-menu li a:hover {
   background-color: gray;
   color: white;
 }
 
-.menu-navegacao ul li a {
+.navigation-menu ul li a {
   color: black;
+}
+
+.small-menu-navigation {
+  width: 100%;
+  background-color: rgb(39, 39, 39);
+}
+
+.small-menu-navigation > div {
+  width: 100%;
+  font-size: 11pt;
+}
+
+.small-menu-navigation > div > a {
+  color: white;
+  width: 100%;
+  display: block;
+  padding: .5rem .7rem;
+}
+
+.small-menu-navigation-submenu {
+  background-color: white;
+  padding: 1rem .75rem;
+  margin-top: .5rem;
+}
+
+.small-menu-navigation-submenu div a {
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+}
+
+.small-menu-navigation-submenu div a i {
+  padding-right: 7px;
+}
+
+.small-menu-navigation-submenu div a:hover {
+  font-weight: bold;
+}
+
+.submenu-active {
+  background-color: rgb(58, 57, 57) !important;
+}
+
+.right-panel {
+  border-left: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  padding: .5rem;
 }
