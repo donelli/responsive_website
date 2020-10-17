@@ -318,9 +318,81 @@
           </a>
         </p>
 
+        <h4>How to Test a Responsive Website</h4>
+        <p>The Responsive design test means <a href="https://www.softwaretestinghelp.com/web-application-testing/" target="_blank"> testing the website</a> or URL from different devices. Practically, it is not possible to test the responsive website completely because to do so we need to set up various systems for various screen sizes.</p>
+        <p>A possible way for the responsive test is by resizing the browser window size as per the test scenario.</p>
+        <p>Some browsers, such as IE and Safari will provide plug-ins or browser extensions which will help you view the viewport area in pixels. This makes the testing easy by getting the desired screen size by modifying the pixels.</p>
+        <p>Other browsers like Chrome provide software or program called <b>“Emulator”</b> which will help change the screen features and environment as per the desired device needed for testing.</p>
+        <p><b>Note: “Emulator”</b> is software or program that is provided within the browser which makes the host system (current browser) behave like the guest system (browser of the desired device that is to be tested for the screen size desired).</p>
+        <p>Even though the emulators cannot give you the exact environment needed for testing, they are a cost-effective solution to test an RW at a high-level.</p>
 
-        
+        <h4>Sample Test scenarios for responsive website testing:</h4>
+        <p>The responsive web design tester should make sure that responsive design is satisfying all the below-mentioned <a href="https://www.softwaretestinghelp.com/test-cases-vs-test-scenarios/" target="_blank"> test scenarios </a> to ensure it is a bug-free responsive design.</p>
+        <p><b>#1)</b> Responsive website link or URL should be the same for all browsers in each and every device irrespective of the screen resolution.</p>
+        <p>Suppose <em>www.abc.com</em> is a responsive website. If we open it on a laptop and on a mobile phone then the URL should be the same on both the devices. The website opened in the mobile browser should not start with <em>www.m.abc.com</em> or <em>www.mobile.abc.com</em></p>
+        <p><span style="text-decoration: underline;"><b>Example:</b></span> Open the website www.kotak.com from a laptop and also open the same from mobile too and observe the URL in both the devices. The URL is not the same for both the devices.</p>
+        <p>Below snapshot displays how the URL changes for a <b>non-responsive website in different devices</b> such as laptop and mobile.</p>
 
+        <p>
+          <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-1-1st.jpg" target="_blank">
+            <img class="alignnone wp-image-10841" src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-1-1st.jpg" alt="non-responsive website in different devices" width="740" height="324">
+          </a>
+        </p>
+
+        <p>Open the website <em>www.w3schools.com</em> from a laptop and from mobile and check the URLs. It should be the same for both the devices.</p>
+        <p><b>Below snapshot shows the URL remains the same for a responsive website in different devices:</b></p>
+
+        <p>
+          <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Test-scenario-2-for-RWD.jpg" target="_blank">
+            <img src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/Test-scenario-2-for-RWD.jpg" alt="w3schools">
+          </a>
+        </p>
+
+        <p><b>#2)</b> The display location of the content (images, sub-links, menus, etc.) of a responsive website should change dynamically as per the change in the screen resolution. That is, if we change the screen resolution from the size of the laptop to a mobile then the display of menu options should change dynamically.</p>
+        <p><span style="text-decoration: underline;"><b>Example:</b></span> Open the link <em>www.fpl.com</em> from a laptop and click on the menu on the right top corner of the window. Menu options are displayed as shown below:</p>
+        <p>
+          <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-1st-laptop.jpg" target="_blank">
+            <img src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-1st-laptop.jpg" alt="softwaretestinghelp">
+          </a>
+        </p>
+
+        <p>Open <em>www.fpl.com</em> from mobile and click on the menu on the right top corner of the window. Menu options are as below:</p>
+        <p>
+          <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-2nd-mobile.jpg" target="_blank">
+            <img src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-2nd-mobile.jpg" alt="softwaretestinghelp-mobile">
+          </a>
+        </p>
+
+        <p><b>Note:</b> This scenario can also be tested using browser emulators (<span style="text-decoration: underline;">Ex:</span> chrome).</p>
+        <p>Open the website <em>www.fpl.com</em> through a desktop and observe how the menu options are displayed. See below snapshot:</p>
+        <p>
+          <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-1st-laptop.jpg" target="_blank">
+            <img src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-1st-laptop.jpg" alt="softwaretestinghelp-snapshot">
+          </a>
+        </p>
+
+        <p>Now resize the browser window to that of mobile screen size and then check the display of the menu options. See below snapshot:</p>
+        <p>
+          <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC2-resized.jpg" target="_blank">
+            <img src="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC2-resized.jpg" alt="softwaretestinghelp-mobile-snapshot">
+          </a>
+        </p>
+
+        <p><b>#3)</b> URLs of a responsive website should also be resolution specific.</p>
+        <p><b>Pre-requisite to test this scenario:</b> Ask the developer to insert any sub-link into the Responsive testing website where the sub-link is not responsive.</p>
+        <p><span style="text-decoration: underline;">For example,</span> the developer can insert link <em>www.snapdeal.com</em> to our testing website.</p>
+        <p>Now, open the responsive testing website from a mobile and click on the sub-link mentioned in the pre-requisite. Then the URL of the sub-link should change to <em>https://m.snapdeal.com</em>.</p>
+
+        <p><b>#4)</b> The same scenario can be tested from a laptop too. Open the RW from a desktop or laptop and click on the sub-link (mentioned in the pre-requisite of test scenario three) that is not responsive. The URL of the sub link should not change (as we are testing this scenario from the laptop the URL should remain the same).</p>
+
+        <p><b>#5) Pre-requisite to test this scenario:</b> Ask the developer to insert any sub-link, <span style="text-decoration: underline;">For example,</span> <em>www.paytm.com</em> into the testing site. The mobile device in which you are going to execute this scenario should have the respective application of Paytm installed in the mobile.</p>
+        <p>Now open our testing responsive website from a mobile and click on the “paytm” sub-link. Then the Paytm application which is installed in the mobile should be opened. (The user should not be redirected to the website in the browser or another window; only the app should be open.)</p>
+
+        <p><b>#6)</b> The images in the responsive website are resolution specific. It means that the resolution of the image inserted in the code of responsive website designed for mobile compatibility is different from that of a desktop or tablet. Each screen size should have its specific image in the design.</p>
+        <p><b>Pre-requisite to test this scenario:</b> Testing and checking the resolution of the images could be a tough task. Ask the developer to insert three different images in the responsive website separately for mobile, tablet and desktop.</p>
+        <p>Open the testing responsive design website from a desktop, tablet and a mobile. The images on the responsive web page should be different for all the three devices.</p>
+
+        <!-- TODO continuar aqui -->
 
       </div>
       <div class="cell small-12 medium-4 right-panel">
