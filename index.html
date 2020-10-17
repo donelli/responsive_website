@@ -553,7 +553,33 @@
         </div>
         <p><b>14)</b> For MAC machines we have a separate application called <a href="https://www.macupdate.com/app/mac/42455/aptus" target="_blank">“APTUS”</a> to test an RW. This application allows you to set-up various breakpoints on various devices for testing. APTUS is not a free application and we have to buy it from the Mac App Store.</p>
 
+        <h4>Challenges of Testing Responsive Design and Possible Solutions</h4>
 
+        <p class="sub-title">Dynamic Test Strategy</p>
+        <p>Moving from 320×480 (the resolution of the iPhone4) to 2048×2048 (a large monitor) leaves over 4 Million possible browser sizes. Most test groups will narrow the list of test devices down to a handful. Even then, the manual testing problem is hard or impossible to approach.</p>
+        <p>Developers cannot possibly anticipate all of the platform problems, and testers can’t catch them before release. Because of this, we find the occasional user interface issue in production.</p>
+        <p>Maybe someone reduced the size of their browser causing important text fields to be covered by a page label. Perhaps some code designed to handle dynamic page resizing breaks modal date pickers and never gets noticed by a normal test built on WebDriver. There are too many display options to build tests for and too little time.</p>
+
+        <p><b>Let’s take a look at a <span style="text-decoration: underline;">realistic example</span> to illustrate the problem.</b></p>
+        <p>Dynamic pages, things like advertising sliders, and content streamed in from users in different page sizes, are a staple of many software products. Add to this the fact that we can’t predict how the page will be displayed and many automation efforts start with failure.</p>
+        <p>I see two popular solutions for this problem — using a standardized, or baseline, data set and refreshing that every time the test suite is run, and taking things one environment or platform at a time</p>
+        <p>Standard data ensures page content will look the same every time we load the test environment. That strategy combined with something like Sauce Labs that gives people access to many platforms and you get pretty far.</p>
+        <p>This approach takes time and resources. You will need time from someone with database access, usually a DBA, to create and update database exports. And, someone has to create scripts setup and teardown scripts to maintain the test environment. After all this effort, you might end up with the type of sanitized environment bugs love to hide in.</p>
+        <p>Alternately, you could use Visual Testing technology to help automate tests on web pages that vary in layout and content. Using this tooling, you can create tests without any changes to your test environment, and without requiring any skill sets from people outside of your test group.</p>
+
+        <p><b>Let’s look at an example.</b></p>
+        <p>Consider the Twitter mobile app.</p>
+        <p>This product is a combination of continuously changing user content and advertising. There are also a few core parts of the user interface, such as the news feed and notifications, in the header.</p>
+        <p>Using a visual testing tool, you could start by performing a screen capture of the entire scrollable page, not just the viewable area. You could choose a comparison option that ignores text content but focuses on on-page elements.</p>
+        <p><span style="text-decoration: underline;"> for example,</span> you could see that the fields for tweets exist, that each tweet has a name element and a date/time element, without worrying about what is in the elements.</p>
+        <p>Searching for elements across full pages also relieves the maintenance and complexity burden we see in many automated tests. Rather than manipulating data on a page, saving, scrolling and then verifying, you get everything in one shot. This means less code to write, less code to maintain, and fewer false positives in the nightly test runs.</p>
+
+        <p class="sub-title">Responsive Testing for Responsive Design:</p>
+        <p>Responsive design has added the combinatorial problem to every available platform. The question is; out of all of these possible platforms and screen sizes, which do we select for the best test coverage.</p>
+        <p>Reducing the number of environments we cover to only the most popular ones makes the technical task easier while also ignoring the coverage problem.</p>
+        <p>Increasing the number of environments with an automation framework alone creates a maintenance nightmare and potentially adds an unsolvable testing problem.</p>
+        <p>The combination of good visual testing tools with a flexible UI automation framework, such as web driver, can make the technical aspects of this problem not just easier to deal with, but solvable.</p>
+        <p>The target is good user interface coverage with a reasonable maintenance burden. Visual testing is your only robust and scalable option.</p>
 
 
 
