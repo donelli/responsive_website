@@ -1,3 +1,6 @@
+h4 {
+  font-weight: bold;
+}
 
 a {
   color: #a90000;
@@ -76,4 +79,13 @@ a:hover {
   border-bottom: 1px solid lightgray;
   border-right: 1px solid lightgray;
   padding: .5rem;
+}
+
+.other-tools p {
+  margin: 0;
+}
+
+.sub-title {
+  color: #ff6600;
+  font-weight: bold;
 }
