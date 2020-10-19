@@ -6,21 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Web Design Testing: The Complete Beginner’s Guide</title>
   
-  <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
-
-  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
-  
-  <link rel="stylesheet" href="./css/styles.css">
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-  
-  <script>
-    // Initializes the foundation JS API
-    $(document).ready(() => $(document).foundation() );
-  </script> -->
-  
   <link rel="stylesheet" href="./foundation/css/foundation.css">
   <link rel="stylesheet" href="./foundation/css/app.css">
   <link rel="stylesheet" href="./css/styles.css">
@@ -61,10 +46,14 @@
   <div class="top-bar align-center navigation-menu" id="responsive-menu-nav">
     
     <ul class="medium-horizontal menu hide-for-small-only">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">FREE EBooks</a></li>
-        <li><a href="#">QA Testing</a></li>
+        <li><a href="https://www.softwaretestinghelp.com/">Home</a></li>
+        <li><a href="https://www.softwaretestinghelp.com/resources/">Resources</a></li>
+        <li><a href="https://www.softwaretestinghelp.com/practical-software-testing-new-free-ebook-download/">FREE EBooks</a></li>
+        
+        <li>
+          <a href="#">QA Testing</a>
+        </li>
+        
         <li><a href="#">Courses</a></li>
         <li><a href="#">Automation</a></li>
         <li><a href="#">Types Of Testing</a></li>
@@ -74,15 +63,15 @@
     <div class="show-for-small-only small-menu-navigation">
       
       <div class="align-left">
-        <a href="#">Home</a>
+        <a href="https://www.softwaretestinghelp.com/">Home</a>
       </div>
       
       <div class="align-left">
-        <a href="#">Resources</a>
+        <a href="https://www.softwaretestinghelp.com/resources/">Resources</a>
       </div>
       
       <div class="align-left">
-        <a href="#">FREE EBooks</a>
+        <a href="https://www.softwaretestinghelp.com/practical-software-testing-new-free-ebook-download/">FREE EBooks</a>
       </div>
       
       <div class="align-left">
@@ -215,7 +204,34 @@
       </div>
 
       <div class="align-left">
-        <a href="#">Tutorials</a>
+        
+        <a data-toggle="tutorials_submenu toggler_tutorials caret_tutorials" id="toggler_tutorials" data-toggler=".submenu-active">
+          Tutorials
+          <div class="float-right">
+            <i class="fas fa-caret-down" id="caret_tutorials" data-toggler="fa-caret-down fa-caret-up"></i>
+          </div>
+        </a>
+        
+        <div id="tutorials_submenu" data-toggler=".hide" class="hide small-menu-navigation-submenu">
+          
+          <div class="grid-x">
+            <a href="https://www.softwaretestinghelp.com/devops-tutorials/" class="cell small-6">DevOps</a>
+            <a href="https://www.softwaretestinghelp.com/python/" class="cell small-6">Python</a>
+            <a href="https://www.softwaretestinghelp.com/vbscript-tutorial-1/" class="cell small-6">VBScript</a>
+            <a href="https://www.softwaretestinghelp.com/java/" class="cell small-6">JAVA</a>
+            <a href="https://www.softwaretestinghelp.com/computer-networking-basics/" class="cell small-6">Computer Networking</a>
+            <a href="https://www.softwaretestinghelp.com/unix-tutorials/" class="cell small-6">UNIX</a>
+            <a href="https://www.softwaretestinghelp.com/mockito-tutorial/" class="cell small-6">Mockito</a>
+            <a href="https://www.softwaretestinghelp.com/angularjs-tutorial/" class="cell small-6">AngularJS</a>
+            <a href="https://www.softwaretestinghelp.com/specflow-tutorial/" class="cell small-6">SpecFlow</a>
+            <div class="cell small-6"></div>
+            <a href="https://www.softwaretestinghelp.com/json-tutorial/" class="cell small-6">JSON</a>
+            <div class="cell small-6"></div>
+            <a href="https://www.softwaretestinghelp.com/mongodb/" class="cell small-6">MongoDB</a>
+          </div>
+          
+        </div>
+      
       </div>
       
     </div>
