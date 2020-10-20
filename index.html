@@ -16,6 +16,8 @@
   <script src="./foundation/js/vendor/foundation.js"></script>
   <script src="./foundation/js/app.js"></script>
   
+  <script src="./js/script.js"></script>
+  
   <script>
     // Initializes the foundation JS API
     $(document).ready(() => $(document).foundation() );
@@ -46,31 +48,15 @@
   <div class="top-bar align-center navigation-menu" id="responsive-menu-nav">
     
     <ul class="medium-horizontal menu hide-for-small-only">
-        <li><a href="https://www.softwaretestinghelp.com/">Home</a></li>
-        <li><a href="https://www.softwaretestinghelp.com/resources/">Resources</a></li>
-        <li><a href="https://www.softwaretestinghelp.com/practical-software-testing-new-free-ebook-download/">FREE EBooks</a></li>
-        
-        <li>
-          <a data-toggle="example-dropdown-1">QA Testing</a>
-        </li>
-        
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Automation</a></li>
-        <li><a href="#">Types Of Testing</a></li>
-        <li><a href="#">Tutorials</a></li>
+        <li><a class="desktop-menu-button" href="https://www.softwaretestinghelp.com/">Home</a></li>
+        <li><a class="desktop-menu-button" href="https://www.softwaretestinghelp.com/resources/">Resources</a></li>
+        <li><a class="desktop-menu-button" href="https://www.softwaretestinghelp.com/practical-software-testing-new-free-ebook-download/">FREE EBooks</a></li>
+        <li><a class="desktop-menu-button" onclick="showMenu('desktop-menu-qa', this)">QA Testing<i class="fas fa-caret-down" style="padding-left: 5px;"></i></a></li>
+        <li><a class="desktop-menu-button" onclick="showMenu('desktop-menu-courses', this)" >Courses<i class="fas fa-caret-down" style="padding-left: 5px;"></i></a></li>
+        <li><a class="desktop-menu-button" onclick="showMenu('desktop-menu-automation', this)">Automation<i class="fas fa-caret-down" style="padding-left: 5px;"></i></a></li>
+        <li><a class="desktop-menu-button" onclick="showMenu('desktop-menu-types', this)">Types Of Testing<i class="fas fa-caret-down" style="padding-left: 5px;"></i></a></li>
+        <li><a class="desktop-menu-button" onclick="showMenu('desktop-menu-tutorials', this)">Tutorials<i class="fas fa-caret-down" style="padding-left: 5px;"></i></a></li>
     </ul>
-    
-    <div class="dropdown-pane" id="example-dropdown-1" data-dropdown data-hover="false" data-hover-pane="false" data-position="bottom" data-alignment="left" style="margin-left: auto; margin-right: auto;">
-      
-      wasd
-      
-      <!-- <div class="grid-container">
-        <div class="grid-x grid-margin-x">
-          wasd
-        </div>
-      </div> -->
-      
-    </div>
     
     <div class="show-for-small-only small-menu-navigation">
       
@@ -117,7 +103,7 @@
       
       </div>
       
-      <div class="align-left">
+      <div>
         
         <a data-toggle="courses_submenu toggler_courses caret_courses" id="toggler_courses" data-toggler=".submenu-active">
           Courses
@@ -246,6 +232,109 @@
       
       </div>
       
+    </div>
+    
+  </div>
+  
+  <div id="desktop-menu" class="hide desktop-menu" style="position: absolute; width: 100%" data-toggler=".hide">
+    
+    <div class="grid-container">
+      <div class="grid-x">
+        
+        <div class="cell-12 desktop-menu-option padding-1" id="desktop-menu-qa" style="width: 100%;">
+          
+          <div class="grid-x">
+            <a href="https://www.softwaretestinghelp.com/free-online-software-testing-qa-training-course/" class="cell small-3">Free QA Training</a>
+            <a href="https://www.softwaretestinghelp.com/manual-testing-tutorial-1/" class="cell small-3">Software Testing</a>
+            <a href="https://www.softwaretestinghelp.com/how-to-write-effective-test-cases-test-cases-procedures-and-definitions/" class="cell small-3">Test Cases</a>
+            <a href="https://www.softwaretestinghelp.com/bugzilla-new-version-bugzilla-30-released/" class="cell small-3">BugZilla</a>
+            <a href="https://www.softwaretestinghelp.com/testlink-tutorial-1/" class="cell small-3">TestLink</a>
+            <a href="https://www.softwaretestinghelp.com/beginners-guide-to-mobile-application-testing/" class="cell small-3">Mobile Testing</a>
+            <a href="https://www.softwaretestinghelp.com/agile-scrum-methodology-for-development-and-testing/" class="cell small-3">Agile Methodology</a>
+            <a href="https://www.softwaretestinghelp.com/software-quality-assurance/" class="cell small-3">Quality Assurance</a>
+            <a href="https://www.softwaretestinghelp.com/database-testing-process/" class="cell small-3">Database Testing</a>
+            <a href="https://www.softwaretestinghelp.com/15-best-test-management-tools-for-software-testers/" class="cell small-3">Test Management</a>
+            <a href="https://www.softwaretestinghelp.com/etl-testing-data-warehouse-testing/" class="cell small-3">ETL Testing</a>
+            <a href="https://www.softwaretestinghelp.com/guide-erp-testing-sap-testing-1/" class="cell small-3">SAP ERP Testing</a>
+            <a href="https://www.softwaretestinghelp.com/software-development-life-cycle-sdlc/" class="cell small-3">SDLC</a>
+          </div>
+          
+        </div>
+        
+        <div class="cell-12 desktop-menu-option padding-1" id="desktop-menu-courses" style="width: 100%;">
+          
+          <div class="grid-x">
+            <a href="http://www.softwaretestinghelp.org/best-software-testing-online-training-course/" class="cell small-6"><i class="fas fa-user-tie"></i>Software Testing (LIVE Course)</a>
+            <a href="http://www.softwaretestinghelp.org/software-testing-qa-videos/" class="cell small-6"><i class="fab fa-youtube"></i>Software Testing</a>
+            <a href="http://www.softwaretestinghelp.org/selenium-training-online-course/" class="cell small-6"><i class="fas fa-user-tie"></i>Selenium (LIVE Course)</a>
+            <a href="http://www.softwaretestinghelp.org/selenium-training-videos/" class="cell small-6"><i class="fab fa-youtube"></i>Selenium</a>
+            <div class="cell small-6"></div>
+            <a href="http://www.softwaretestinghelp.org/qtp-training-videos/" class="cell small-6"><i class="fab fa-youtube"></i>QTP/UFT</a>
+            <div class="cell small-6"></div>
+            <a href="http://www.softwaretestinghelp.org/jira-video-course/" class="cell small-6"><i class="fab fa-youtube"></i>JIRA</a>
+            <div class="cell small-6"></div>
+            <a href="http://www.softwaretestinghelp.org/ruby-cucumber-online-video-course/" class="cell small-6"><i class="fab fa-youtube"></i>Ruby Cucumber</a>
+          </div>
+          
+        </div>
+        
+        <div class="cell-12 desktop-menu-option padding-1" id="desktop-menu-automation" style="width: 100%;">
+          
+          <div class="grid-x">
+            <a href="https://www.softwaretestinghelp.com/automation-testing-tutorial-1/" class="cell small-4">Automation Testing</a>
+            <a href="https://www.softwaretestinghelp.com/selenium-tutorial-1/" class="cell small-4">Selenium</a>
+            <a href="https://www.softwaretestinghelp.com/web-services-api-testing-tool-soapui-tutorial-1/" class="cell small-4">SoapUI</a>
+            <a href="https://www.softwaretestinghelp.com/qtp-quicktest-professional-tutorial-1/" class="cell small-4">QTP/UFT</a>
+            <a href="https://www.softwaretestinghelp.com/atlassian-jira-tutorial-1/" class="cell small-4">JIRA</a>
+            <a href="https://www.softwaretestinghelp.com/learn-hp-quality-center-qc-in-4-days/" class="cell small-4">ALM QC</a>
+            <a href="https://www.softwaretestinghelp.com/jmeter-tutorials/" class="cell small-4">JMeter</a>
+            <a href="https://www.softwaretestinghelp.com/hp-loadrunner-load-testing-tool-training-tutorials/" class="cell small-4">LoadRunner</a>
+          </div>
+
+        </div>
+        
+        <div class="cell-12 desktop-menu-option padding-1" id="desktop-menu-types" style="width: 100%;">
+          
+          <div class="grid-x">
+            <a href="https://www.softwaretestinghelp.com/types-of-software-testing/" class="cell small-3">All Testing Types</a>
+            <a href="https://www.softwaretestinghelp.com/guide-to-functional-testing/" class="cell small-3">Functional Testing</a>
+            <a href="https://www.softwaretestinghelp.com/regression-testing-tools-and-methods/" class="cell small-3">Regression Testing</a>
+            <a href="https://www.softwaretestinghelp.com/what-is-integration-testing/" class="cell small-3">Integration Testing</a>
+            <a href="https://www.softwaretestinghelp.com/unit-testing/" class="cell small-3">Unit Testing</a>
+            <a href="https://www.softwaretestinghelp.com/system-testing/" class="cell small-3">System Testing</a>
+            <a href="https://www.softwaretestinghelp.com/smoke-testing-and-sanity-testing-difference/" class="cell small-3">Smoke Testing</a>
+            <a href="https://www.softwaretestinghelp.com/usability-testing-guide/" class="cell small-3">Usability Testing</a>
+            <a href="https://www.softwaretestinghelp.com/what-is-user-acceptance-testing-uat/" class="cell small-3">UAT Testing</a>
+            <a href="https://www.softwaretestinghelp.com/load-testing/" class="cell small-3">Load Testing</a>
+            <a href="https://www.softwaretestinghelp.com/beta-testing/" class="cell small-3">Beta Testing</a>
+            <a href="https://www.softwaretestinghelp.com/stress-testing/" class="cell small-3">Stress Testing</a>
+            <a href="https://www.softwaretestinghelp.com/black-box-testing/" class="cell small-3">Black Box Testing</a>
+            <a href="https://www.softwaretestinghelp.com/how-to-test-application-security-web-and-desktop-application-security-testing-techniques/" class="cell small-3">Security Testing</a>
+            <a href="https://www.softwaretestinghelp.com/white-box-testing-techniques-with-example/" class="cell small-3">White Box testing</a>
+            <a href="https://www.softwaretestinghelp.com/introduction-to-performance-testing-loadrunner-training-tutorial-part-1/" class="cell small-3">Performance Testing</a>
+          </div>
+          
+        </div>
+        
+        <div class="cell-12 desktop-menu-option padding-1" id="desktop-menu-tutorials" style="width: 100%;">
+          
+          <div class="grid-x">
+            <a href="https://www.softwaretestinghelp.com/devops-tutorials/" class="cell small-4">DevOps</a>
+            <a href="https://www.softwaretestinghelp.com/python/" class="cell small-4">Python</a>
+            <a href="https://www.softwaretestinghelp.com/vbscript-tutorial-1/" class="cell small-4">VBScript</a>
+            <a href="https://www.softwaretestinghelp.com/java/" class="cell small-4">JAVA</a>
+            <a href="https://www.softwaretestinghelp.com/computer-networking-basics/" class="cell small-4">Computer Networking</a>
+            <a href="https://www.softwaretestinghelp.com/unix-tutorials/" class="cell small-4">UNIX</a>
+            <a href="https://www.softwaretestinghelp.com/mockito-tutorial/" class="cell small-4">Mockito</a>
+            <a href="https://www.softwaretestinghelp.com/angularjs-tutorial/" class="cell small-4">AngularJS</a>
+            <a href="https://www.softwaretestinghelp.com/specflow-tutorial/" class="cell small-4">SpecFlow</a>
+            <a href="https://www.softwaretestinghelp.com/json-tutorial/" class="cell small-4">JSON</a>
+            <a href="https://www.softwaretestinghelp.com/mongodb/" class="cell small-4">MongoDB</a>
+          </div>
+          
+        </div>
+        
+      </div>
     </div>
     
   </div>

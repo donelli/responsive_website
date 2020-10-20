@@ -89,3 +89,24 @@ a:hover {
   color: #ff6600;
   font-weight: bold;
 }
+
+.active {
+  background-color: gray;
+  color: white !important;
+}
+
+.desktop-menu > div {
+  background-color: lightgray;
+}
+
+.desktop-menu {
+  z-index: 500000 !important;
+}
+
+.desktop-menu-button:hover {
+  font-weight: normal;
+}
+
+.desktop-menu-option > div > a {
+  padding-top: 10px;
+}
