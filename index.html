@@ -505,7 +505,7 @@
 
         <h4>Sample Test scenarios for responsive website testing:</h4>
         <p>The responsive web design tester should make sure that responsive design is satisfying all the below-mentioned <a href="https://www.softwaretestinghelp.com/test-cases-vs-test-scenarios/" target="_blank"> test scenarios </a> to ensure it is a bug-free responsive design.</p>
-        <p><b>#1)</b> Responsive website link or URL should be the same for all browsers in each and every device irrespective of the screen resolution.</p>
+        <p><span class="numeration">#1)</span> Responsive website link or URL should be the same for all browsers in each and every device irrespective of the screen resolution.</p>
         <p>Suppose <em>www.abc.com</em> is a responsive website. If we open it on a laptop and on a mobile phone then the URL should be the same on both the devices. The website opened in the mobile browser should not start with <em>www.m.abc.com</em> or <em>www.mobile.abc.com</em></p>
         <p><span style="text-decoration: underline;"><b>Example:</b></span> Open the website www.kotak.com from a laptop and also open the same from mobile too and observe the URL in both the devices. The URL is not the same for both the devices.</p>
         <p>Below snapshot displays how the URL changes for a <b>non-responsive website in different devices</b> such as laptop and mobile.</p>
@@ -525,7 +525,7 @@
           </a>
         </p>
 
-        <p><b>#2)</b> The display location of the content (images, sub-links, menus, etc.) of a responsive website should change dynamically as per the change in the screen resolution. That is, if we change the screen resolution from the size of the laptop to a mobile then the display of menu options should change dynamically.</p>
+        <p><span class="numeration">#2)</span> The display location of the content (images, sub-links, menus, etc.) of a responsive website should change dynamically as per the change in the screen resolution. That is, if we change the screen resolution from the size of the laptop to a mobile then the display of menu options should change dynamically.</p>
         <p><span style="text-decoration: underline;"><b>Example:</b></span> Open the link <em>www.fpl.com</em> from a laptop and click on the menu on the right top corner of the window. Menu options are displayed as shown below:</p>
         <p>
           <a href="https://cdn.softwaretestinghelp.com/wp-content/qa/uploads/2016/11/TC-2-1st-laptop.jpg" target="_blank">
@@ -555,17 +555,17 @@
           </a>
         </p>
 
-        <p><b>#3)</b> URLs of a responsive website should also be resolution specific.</p>
+        <p><span class="numeration">#3)</span> URLs of a responsive website should also be resolution specific.</p>
         <p><b>Pre-requisite to test this scenario:</b> Ask the developer to insert any sub-link into the Responsive testing website where the sub-link is not responsive.</p>
         <p><span style="text-decoration: underline;">For example,</span> the developer can insert link <em>www.snapdeal.com</em> to our testing website.</p>
         <p>Now, open the responsive testing website from a mobile and click on the sub-link mentioned in the pre-requisite. Then the URL of the sub-link should change to <em>https://m.snapdeal.com</em>.</p>
 
-        <p><b>#4)</b> The same scenario can be tested from a laptop too. Open the RW from a desktop or laptop and click on the sub-link (mentioned in the pre-requisite of test scenario three) that is not responsive. The URL of the sub link should not change (as we are testing this scenario from the laptop the URL should remain the same).</p>
+        <p><span class="numeration">#4)</span> The same scenario can be tested from a laptop too. Open the RW from a desktop or laptop and click on the sub-link (mentioned in the pre-requisite of test scenario three) that is not responsive. The URL of the sub link should not change (as we are testing this scenario from the laptop the URL should remain the same).</p>
 
-        <p><b>#5) Pre-requisite to test this scenario:</b> Ask the developer to insert any sub-link, <span style="text-decoration: underline;">For example,</span> <em>www.paytm.com</em> into the testing site. The mobile device in which you are going to execute this scenario should have the respective application of Paytm installed in the mobile.</p>
+        <p><span class="numeration">#5)</span> <b> Pre-requisite to test this scenario:</b> Ask the developer to insert any sub-link, <span style="text-decoration: underline;">For example,</span> <em>www.paytm.com</em> into the testing site. The mobile device in which you are going to execute this scenario should have the respective application of Paytm installed in the mobile.</p>
         <p>Now open our testing responsive website from a mobile and click on the “paytm” sub-link. Then the Paytm application which is installed in the mobile should be opened. (The user should not be redirected to the website in the browser or another window; only the app should be open.)</p>
 
-        <p><b>#6)</b> The images in the responsive website are resolution specific. It means that the resolution of the image inserted in the code of responsive website designed for mobile compatibility is different from that of a desktop or tablet. Each screen size should have its specific image in the design.</p>
+        <p><span class="numeration">#6)</span> The images in the responsive website are resolution specific. It means that the resolution of the image inserted in the code of responsive website designed for mobile compatibility is different from that of a desktop or tablet. Each screen size should have its specific image in the design.</p>
         <p><b>Pre-requisite to test this scenario:</b> Testing and checking the resolution of the images could be a tough task. Ask the developer to insert three different images in the responsive website separately for mobile, tablet and desktop.</p>
         <p>Open the testing responsive design website from a desktop, tablet and a mobile. The images on the responsive web page should be different for all the three devices.</p>
 
@@ -593,11 +593,11 @@
           </a>
         </p>
 
-        <p><b>#7)</b> Click randomly anywhere on the web page and check if any data or text which is not hyperlinked gets initiated and redirected to any other page or content. This tests whether any word or text is marked as the hyperlink in the <a href="https://www.softwaretestinghelp.com/how-to-perform-backend-testing/" target="_blank">  back end.</a></p>
+        <p><span class="numeration">#7)</span> Click randomly anywhere on the web page and check if any data or text which is not hyperlinked gets initiated and redirected to any other page or content. This tests whether any word or text is marked as the hyperlink in the <a href="https://www.softwaretestinghelp.com/how-to-perform-backend-testing/" target="_blank">  back end.</a></p>
         <p><b>Note:</b> In a few projects, the requirements talk about the pixel size and resolution of the screen for particular devices. (<span style="text-decoration: underline;">For example,</span> a tablet view for their RW should be at 15:15 pixel and for a mobile, it should be at 10:10 etc.)</p>
         <p>Testing for the dynamic changes that should happen for the RW display when we change the pixel size is the main scenario.</p>
         
-        <p><b>#8)</b> Open our testing RW in a browser and view the contents and display of main images. Now resize the window till the breakpoint of the tablet size and verify the changes that should happen to the image resolution and any other content. At breakpoints, the changes should happen dynamically (sometimes the changes will not happen at the breakpoints and may change at some other pixel size which is a defect.)</p>
+        <p><span class="numeration">#8)</span> Open our testing RW in a browser and view the contents and display of main images. Now resize the window till the breakpoint of the tablet size and verify the changes that should happen to the image resolution and any other content. At breakpoints, the changes should happen dynamically (sometimes the changes will not happen at the breakpoints and may change at some other pixel size which is a defect.)</p>
 
         <h4>Tools to Test a Responsive Website</h4>
         <p>There are few tools (websites) that will let you preview the web pages of our responsive website.</p>
@@ -760,9 +760,14 @@
         <p>The combination of good visual testing tools with a flexible UI automation framework, such as web driver, can make the technical aspects of this problem not just easier to deal with, but solvable.</p>
         <p>The target is good user interface coverage with a reasonable maintenance burden. Visual testing is your only robust and scalable option.</p>
 
-
-
-
+        <h4>Tips for Responsive web testing</h4>
+        <p><span class="numeration">#1)</span> While testing an RW you should mindful of the design consistency such as the alignment of images, texts, padding around the edges, etc. across all the browsers and Operating systems.</p>
+        <p><span class="numeration">#2)</span> During the testing of an RW, the tester should be aware of what to test and how to test on multiple devices at different breakpoints. Otherwise, it could be quite exhaustive and disorienting.</p>
+        <p><span class="numeration">#3)</span> For thorough testing of a responsive website, the tester and developer coordination is a must. The developer should help testers with creating the conditions mentioned in the prerequisites of the test cases.</p>
+        <p><span class="numeration">#4)</span> Check whether the web pages are readable at all resolutions, i.e. the content should be readable even if we resize the browser to mobile screen size.</p>
+        <p><span class="numeration">#5)</span> The important content of the RW should be visible for all breakpoints, i.e. if we change the browser size from desktop screen to mobile screen then the main images, main text, menu, etc. should remain the same.</p>
+        <p><span class="numeration">#6)</span> If the browser is resized for testing then any click area (like buttons, menus, sub-links, etc.) of the RW should be suitable for clicking.        </p>
+        <p><span class="numeration">#7)</span> Resizing the browser and testing the responsive website can identify only a few major issues whereas there may be a few other issues related to finger-swipes, tapping, etc. on mobile devices. Testing these particular features on the actual devices can lead to better defect finding and removal.</p>
 
 
         <!-- TODO continuar aqui -->
