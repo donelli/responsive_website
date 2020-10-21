@@ -110,3 +110,17 @@ a:hover {
 .desktop-menu-option > div > a {
   padding-top: 10px;
 }
+
+.main-title {
+  font-weight: bold;
+  color: #a90000;
+}
+
+.muted {
+  color: rgb(170, 168, 168)
+}
+
+.summary-item {
+  padding: 5px !important;
+  padding-left: 10px !important;
+}
