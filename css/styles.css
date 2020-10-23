@@ -146,3 +146,7 @@ footer a {
 footer p {
   margin: 0;
 }
+
+.questions {
+  font-weight: bold;
+}

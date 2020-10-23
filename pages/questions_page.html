@@ -4,8 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comentários sobre o framework</title>
+
+    <link rel="stylesheet" href="./../foundation/css/foundation.css">
+    <link rel="stylesheet" href="./../foundation/css/app.css">
+    <link rel="stylesheet" href="./../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    
+    <script src="./../foundation/js/vendor/jquery.js"></script>
+    <script src="./../foundation/js/vendor/what-input.js"></script>
+    <script src="./../foundation/js/vendor/foundation.js"></script>
+    <script src="./../foundation/js/app.js"></script>
+    
+    <script src="./js/script.js"></script>
+    <script src="./../js/script.js"></script>
+    
+    <script>
+      // Initializes the foundation JS API
+      $(document).ready(() => $(document).foundation() );
+    </script>
 </head>
 <body>
+
+    <div class="top-bar main-bar">
+        <div class="top-bar-left">
+          <ul class="dropdown menu align-center" data-dropdown-menu>
+            <li class="menu-text h2" style="margin-bottom: 0;">Comentários sobre o Framework</li>
+          </ul>
+        </div>
+    </div>
+
+    <article class="grid-container" style="padding-top: 2rem;">
+        <div class="grid-x grid-margin-x">
+            <div class="cell small-12 medium-12">
+
+                <ul class="dropdown align-center" data-dropdown-menu>
+                    <li class="questions">Qual o grau de dificuldade de utilização do mesmo? Por quê?</li>
+                    <p>Resposta</p>
+                </ul>
+
+                <ul class="dropdown align-center" data-dropdown-menu>
+                    <li class="questions">O framework necessita de algum elemento adicional em sua instalação para funcionar?</li>
+                    <p>Resposta</p>
+                </ul>
+        
+                <ul class="dropdown align-center" data-dropdown-menu>
+                    <li class="questions">Quais os pontos fortes apresentados pelo framework utilizado?</li>
+                    <p>Resposta</p>
+                </ul>
+        
+                <ul class="dropdown align-center" data-dropdown-menu>
+                    <li class="questions">Quais os pontos fracos apresentados pelo framework utilizado?</li>
+                    <p>Resposta</p>
+                </ul>
+        
+                <ul class="dropdown align-center" data-dropdown-menu>
+                    <li class="questions">Alguma outra opinião ou informação adicional que a dupla julgar pertinente.</li>
+                    <p>Resposta</p>
+                </ul>
+
+            </div>
+        </div>
+    </article>
     
 </body>
 </html>
