@@ -32,8 +32,81 @@
           </ul>
         </div>
     </div>
-
-    <pre></pre>
+    <article class="grid-container" style="padding-top: 2rem;">
+      <div class="grid-x grid-margin-x">
+        <div class="cell small-12">
+          
+          <h4>Maneiras de instalar</h4>
+          
+          <p>Há diversas maneiras de instalar o Foundation em um projeto:</p>
+          
+          <ul>
+            <li>
+              Utilizando Package Managers:
+              <br>
+              <code>npm install foundation-sites</code>
+              <br>
+              <code>yarn add foundation-sites</code>
+              <br>
+              <code>php composer.phar require foundation/foundation</code>
+            </li>
+            <br>
+            <li>Utilizando o CLI do próprio Fountation:
+              <br>
+              <code>npm install --global foundation-cli</code>
+              <br>
+              <code>foundation new
+              </code>
+            </li>
+            <br>
+            <li>
+              Utilizar atraves de um CDN:
+              <br>
+              <code>
+                
+                &lt;!-- Compressed CSS --&gt;<br>
+                &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous"&gt;
+                <br><br>
+                &lt;!-- Compressed JavaScript --&gt;<br>
+                &lt;script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"&gt;&lt;/script&gt;
+                
+              </code>
+            </li>
+            <br>
+            <li>
+              Há também como baixar um projeto base com o básico do framework.
+            </li>
+            <br>
+            <li>
+              O Fountation, assim como o Bootstrap, possui um maneira de customizar o framework, detalhes podem ser consultados <a href="https://download.get.foundation/sites/download/">aqui</a>.
+            </li>
+            <br>
+            <li>
+              Pode ser utilizado em conjunto com diversos outros frameworks: Consulte <a href="https://get.foundation/sites/resources">aqui</a> para mais detalhes
+            </li>
+          </ul>
+          
+          <h4 class="margin-top-3">Nosso relato sobre a instalação em nosso projeto</h4>
+          
+          <p>Primeiramente baixamos o projeto base que o Foundation disponibiliza.
+            Porém a build deste projeto é somente com algumas das funcionalidades que o framework disponibiliza.
+            No nosso caso, queriamos todas para podermos testa-las. Então tivemos que ir atrás de outra maneira.
+            Tentamos utilizar os links do CDN, porém a versão lá, era a mesma no projeto base disponibilizado.
+            No final, tivemos que criar uma versão customizada com todas as funcionalidades.
+          </p>
+          
+          <p>
+            Ao longo de várias horas tentando fazer tudo funcionar, continuamos com alguns erros no console sem saber o por que.
+            Por sem o segundo "maior" framework, pensamos que seria mais fácil.
+          </p>
+          
+        </div>
+      </div>
+    </article>  
+    
+    <br>
+    <br>
+    <br>
     
 </body>
 </html>
